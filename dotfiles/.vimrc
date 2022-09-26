@@ -7,6 +7,7 @@ set showcmd
 set hlsearch
 set incsearch
 set ignorecase
+set termguicolors
 syntax on
 filetype plugin indent on
 
@@ -16,6 +17,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdtree'
 Plug 'sheerun/vim-polyglot'
+Plug 'ap/vim-css-color'
 Plug 'luochen1990/rainbow'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -29,7 +31,6 @@ call plug#end()
 let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
 
 " Color Scheme
-set termguicolors
 colo dracula
 
 " Tab Completition
