@@ -7,7 +7,6 @@ set showcmd
 set hlsearch
 set incsearch
 set ignorecase
-set termguicolors
 syntax on
 filetype plugin indent on
 
@@ -24,6 +23,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'morhetz/gruvbox'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'joshdick/onedark.vim', { 'as': 'onedark' }
+Plug 'nanotech/jellybeans.vim'
 
 call plug#end()
 
@@ -31,7 +31,7 @@ call plug#end()
 let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
 
 " Color Scheme
-colo dracula
+colo jellybeans
 
 " Tab Completition
 inoremap <silent><expr> <TAB> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<TAB>"
