@@ -8,7 +8,7 @@ zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
 setopt correctall
 
 # Prompt
-PS1="%F{#cc6666}%n%f@%F{#b6b3e3}%m%f %F{blue}%B%~%b%f %# "
+PS1="%F{#ff5f5f}%n%f@%F{#8787ff}%m%f %F{#ffff00}%B%~%b%f %# "
 
 # Vim keybinding
 bindkey -v
