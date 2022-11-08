@@ -14,15 +14,13 @@ call plug#begin()
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jiangmiao/auto-pairs'
-Plug 'preservim/nerdtree'
 Plug 'sheerun/vim-polyglot'
+Plug 'scrooloose/syntastic'
+Plug 'mhinz/vim-startify'
 Plug 'ap/vim-css-color'
 Plug 'luochen1990/rainbow'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'morhetz/gruvbox'
-Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'joshdick/onedark.vim', { 'as': 'onedark' }
 Plug 'nanotech/jellybeans.vim'
 
 call plug#end()
@@ -35,9 +33,3 @@ colo jellybeans
 
 " Tab Completition
 inoremap <silent><expr> <TAB> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<TAB>"
-
-" NerdTree
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
