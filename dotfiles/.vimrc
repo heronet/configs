@@ -7,6 +7,9 @@ set showcmd
 set hlsearch
 set incsearch
 set ignorecase
+if has('termguicolors')
+	set termguicolors
+endif
 syntax on
 filetype plugin indent on
 
@@ -21,7 +24,9 @@ Plug 'ap/vim-css-color'
 Plug 'luochen1990/rainbow'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'nanotech/jellybeans.vim'
+" Theme
+Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+" Plug 'nanotech/jellybeans.vim'
 
 call plug#end()
 
@@ -29,7 +34,9 @@ call plug#end()
 let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
 
 " Color Scheme
-colo jellybeans
+let g:material_theme_style = 'ocean' 
+let g:airline_theme = 'material'
+colo material
 
 " Tab Completition
 inoremap <silent><expr> <TAB> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<TAB>"
